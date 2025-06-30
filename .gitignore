@@ -8,8 +8,6 @@ __pycache__/
 *.pyc
 
 # Ignore dataset or model files
-*.pkl
-*.joblib
 *.csv
 *.xlsx
 
