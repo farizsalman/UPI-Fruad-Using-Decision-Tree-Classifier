@@ -17,7 +17,7 @@ t_type=joblib.load("t_type.joblib")
 model=joblib.load("Decision_Tree_Classifier.pk1")
 
 st.title('UPI FRAUD DETECTION')
-
+st.image("intro pic.png")
 
 st.text("Unified Payments Interface(UPI) has revolutionised digital transactions in India, enabling fast and seamless money transfers" \
 " between bank accounts. However, the rapid growth pf UPI has also led to a rise in fraudulant activities," \
@@ -25,13 +25,7 @@ st.text("Unified Payments Interface(UPI) has revolutionised digital transactions
 "the security and trustworthiness of digital payment systems"
         )
 
-st.header('Initial Data')
-st.subheader('Overall Distribution of Data')
-st.image('Overall Distribution Of Data.png')
-st.subheader('Category wise Transaction')
-st.image('Transaction Category.png')
-st.subheader('Transaction Success Rate')
-st.image('Transaction Status.png')
+
 
 st.header('Detect Fraud in your transaction  :')
 
@@ -116,5 +110,7 @@ if st.button ("Detect Fraud"):
     
     if detection==1:
         st.error('Fraud activity detected')
+        st.image("fraud transaction pic.png")
     else:
         st.success('Genuine Transaction')
+        st.image("genuine transaction pic.png")
