@@ -2,19 +2,19 @@ import joblib
 import streamlit as st
 
 
-device_oe=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\device_oe.joblib")
-m_category=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\m_category.joblib")
-network_oe=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\network_oe.joblib")
-oe_day=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\oe_day.joblib")
-oe_state=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\oe_state.joblib")
-receive_age=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\receive_age.joblib")
-send_age=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\send_age.joblib")
-receive_bank=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\receive_bank.joblib")
-send_bank=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\send_bank.joblib")
-t_status=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\t_status.joblib")
-t_type=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\t_type.joblib")
+device_oe=joblib.load("device_oe.joblib")
+m_category=joblib.load("m_category.joblib")
+network_oe=joblib.load("network_oe.joblib")
+oe_day=joblib.load("oe_day.joblib")
+oe_state=joblib.load("oe_state.joblib")
+receive_age=joblib.load("receive_age.joblib")
+send_age=joblib.load("send_age.joblib")
+receive_bank=joblib.load("receive_bank.joblib")
+send_bank=joblib.load("send_bank.joblib")
+t_status=joblib.load("t_status.joblib")
+t_type=joblib.load("t_type.joblib")
 
-model=joblib.load(r"C:\Users\salma\OneDrive\Desktop\UPI\Decision_Tree_Classifier.pk1")
+model=joblib.load("Decision_Tree_Classifier.pk1")
 
 st.title('UPI FRAUD DETECTION')
 
@@ -27,11 +27,11 @@ st.text("Unified Payments Interface(UPI) has revolutionised digital transactions
 
 st.header('Initial Data')
 st.subheader('Overall Distribution of Data')
-st.image(r'C:\Users\salma\OneDrive\Desktop\UPI\Overall Distribution Of Data.png')
+st.image('Overall Distribution Of Data.png')
 st.subheader('Category wise Transaction')
-st.image(r'C:\Users\salma\OneDrive\Desktop\UPI\Transaction Category.png')
+st.image('Transaction Category.png')
 st.subheader('Transaction Success Rate')
-st.image(r'C:\Users\salma\OneDrive\Desktop\UPI\Transaction Status.png')
+st.image('Transaction Status.png')
 
 st.header('Detect Fraud in your transaction  :')
 
